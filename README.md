@@ -1,2 +1,0 @@
-# Microondas
-Proyecto #1
