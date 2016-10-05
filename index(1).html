@@ -1,0 +1,57 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+.button {
+background-color: crimson;
+background-image: -webkit-linear-gradient(top, crimson, crimson);
+background-image: -moz-linear-gradient(top,crimson,crimson);
+display: inline-block;
+font-size: 24px;
+font-family: 'Meiryo UI';
+color: #fff;
+text-decoration: none !important;
+padding: 5px 20px;
+line-height: inherit;
+overflow: hidden;
+position: relative;
+border-radius: 2px;
+margin-top: 13px;
+margin-bottom: 10px;
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	 $(document).ready(function() {
+		$('#incfont').click(function(){
+        curSize= parseInt($('#content').css('font-size')) + 2;
+		if(curSize<=20)
+        $('#content').css('font-size', curSize);
+        });
+		$('#decfont').click(function(){
+        curSize= parseInt($('#content').css('font-size')) - 2;
+		if(curSize>=10)
+        $('#content').css('font-size', curSize);
+        });
+	});
+</script>
+</head>
+<body>
+		<div style="background-color:white;width:700px;height:400px;">
+		<div id="content" style="height:260px">
+			<p>Five hundred twenty-five thousand</p>
+			<p>Six hundred minutes</p>
+			<p>Five hundred twenty-five thousand</p>
+			<p>Moments so dear</p>
+			<p>Five hundred twenty-five thousand</p>
+			<p>Six hundred minutes</p>
+			<p>How do you measure, measure a year?</p>
+		</div>
+		<br/>
+		<div id="fontlinks">
+		<a href="#" id="incfont" class="button buttonfont">A+</a>
+		<a href="#" id="decfont" class="button buttonfont">A-</a>
+</body>
+</html>
